@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EmployeeManagerEJBModule">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/EmployeeManagerEJBModule.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
