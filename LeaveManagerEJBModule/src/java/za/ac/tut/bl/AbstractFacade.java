@@ -6,15 +6,12 @@
 package za.ac.tut.bl;
 
 import java.util.List;
-import javax.annotation.security.DeclareRoles;
-import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 
 /**
  *
  * @author SIBUSISO
  */
-@DeclareRoles({"manager", "secretary"})
 public abstract class AbstractFacade<T> {
 
     private Class<T> entityClass;
@@ -25,7 +22,6 @@ public abstract class AbstractFacade<T> {
 
     protected abstract EntityManager getEntityManager();
 
-    @RolesAllowed("secretary")
     public void create(T entity) {
         getEntityManager().persist(entity);
     }
