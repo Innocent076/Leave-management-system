@@ -24,6 +24,10 @@
         <servlet-name>StartSessionServlet</servlet-name>
         <servlet-class>za.ac.tut.web.StartSessionServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.CreateUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddEmployeeServlet</servlet-name>
         <url-pattern>/AddEmployeeServlet.do</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>StartSessionServlet</servlet-name>
         <url-pattern>/StartSessionServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/CreateUserServlet.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
